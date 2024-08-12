@@ -10,23 +10,50 @@ public class recursion {
     // }
 
     // print the sum of first natural number
-    public static void printSum(int i, int sum, int n) {
+    // public static void printSum(int i, int sum, int n) {
 
-        if (i == n) {
-            sum += i;
-            System.out.println(sum);
-        }
+    //     if (i == n) {
+    //         sum += i;
+    //         System.out.println(sum);
+    //     }
 
-        else {
-            sum += i;
+    //     else {
+    //         sum += i;
 
-            printSum(i + 1, sum, n);
-        }
+    //         printSum(i + 1, sum, n);
+    //     }
 
-    }
+    // }
+
+
+
+    // print factrion of a number
+    
+//   public static int printFact(int n){
+//     if(n==0 || n==1){
+//         return 1;
+//     }
+    
+
+//      int factorel = printFact(n-1);
+//      int nfc = factorel*n;
+//      return nfc;
+
+     
+     
+    
+    
+    
+
+// }
+
+
+
+
 
     public static void main(String[] args) {
-        printSum(1, 0, 10);
+       
+        
 
     }
 }
