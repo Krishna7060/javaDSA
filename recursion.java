@@ -1,21 +1,41 @@
 public class recursion {
 
-    public static int calculatePower(int x, int n){
-        if(n==0){
-            return 1;
-        }
+    // public static void towerOfHonoi( int n,String src, String Helper,String Destination){
+    //     if(n==1){
+    //         System.out.println(n+"disk transpered" +src+ "to" +Destination);
+    //         return;
 
-        if(x==0){
-            return 0;
-        }
+    //     }
+        
+    //     towerOfHonoi(n-1, src, Destination, Helper);
+    //     System.out.println(n+"disk transpered" +src+ "to" +Destination);
+    //     towerOfHonoi(n-1, Helper, src, Destination);
+    
+        
+    // }
 
-       int nm1= calculatePower(x, n-1);
-       int xpN =nm1*x;
-       return xpN;
-    }
+
+    // reverse a string
+    
+    // public static void reverseString(String str, int index){
+
+    //     if(index==0){
+    //         System.out.println(str.charAt(index));
+        
+    //         return;
+    //     }
+    //       System.out.print(str.charAt(index));
+    //     reverseString(str, index-1);
+        
+    // }
 
     public static void main(String[] args) {
-       int ans= calculatePower(2, 5);
-       System.out.println(ans);
+        
+        String str = "krishna";
+        int index = str.length()-1;
+    reverseString(str, index);
+
+        
+    
     }
 }
