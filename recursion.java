@@ -1,38 +1,23 @@
-import string.string;
-
 public class recursion {
-    public static int first =-1;
-    public static int last =-1;
 
-     public static void findFirstLastOccurence(String str, int index,char element){
-        if(index==str.length()){
-            System.out.println(first);
-            System.out.println(last);
+    public static boolean isArrSorted(int[] arr, int index){
+        if(index==arr.length-1){
+            System.out.println("array is sorted");
+            
+            return true;
         }
-        char currentChar= str.charAt(index);
-        if(currentChar==element) {
-            if(first==-1){
-                first=index;
-            } else{
-                last=index;
-            }
+        if(arr[index]<arr[index+1]){
+            return isArrSorted(arr, index+1);
+        } else{
+            System.out.println("array is unsorted");
+            return false;
         }
-
-        findFirstLastOccurence(str,index+1,element);
-
-
-     }
-    
+    }
 
     public static void main(String[] args) {
 
-        String str ="krishna";
-    findFirstLastOccurence(str,0,'a');
+        int [] arr ={2,3,4,8};
+        isArrSorted(arr, 0);
         
-        
-
-
-        
-    
     }
 }
